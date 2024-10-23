@@ -1,0 +1,238 @@
+ /* work sans font from google  */
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+ 
+ /* shared style */
+*{
+    font-family: "Work Sans", sans-serif;
+}
+.btn-primary{
+    border-radius: 8px;
+    background-color: #ff900e;
+    padding: 20px 25px;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+}
+/* header styles  */
+header{
+    background-color: antiquewhite;
+    padding: 50px 240px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+}
+nav > ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+nav li a{
+    text-decoration: none;
+    color: #424242;
+}
+/* Banner styles in Header  */
+.banner-content{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+.bannner-description{
+    font-size: 1rem;
+    color: #727272;
+}
+.banner img {
+    margin-top: 30px;
+    width: 100%;
+}
+/* main part styles  */
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+.Teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.teams-contain{
+    padding-right:70px ;
+    padding-left: 70px;
+}
+.teams-title{
+    font-size: 2.8rem;
+}
+.teams-title .Quick-list{
+    color:#727272 ;
+    font-weight: 500;
+}
+.features{
+    color: #ff900e;
+    font-weight: 800;
+}
+/* feature section  */
+.feature{
+    margin-top: 130px;
+    display: flex;
+    gap: 140px;
+}
+.feature .section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.feature-content .card{
+    background-color: #ffffff;
+    box-shadow: 0px 10px 10px 0px #857b7b;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top: 24px;
+    padding: 35px;
+}
+.ten-years-badge{
+    border-radius: 8px;
+    background: #FF900E;
+    color: white;
+    width: 320px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 120px;
+}
+.ten-years-badge h2{
+    font-size: 4rem;
+    margin: 0;
+}
+.ten-years-badge p{
+    font-size: 1.54rem;
+}
+.feature-img img{
+    height: 90%;
+    margin-left: 50px;
+}
+/* facts section  */
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+.facts-card-container .card{
+    border: 1px solid#FF900E;
+    border-radius: 8px;
+    text-align: center;
+    padding: 30px;
+} 
+.facts-card-container .cards-stats{
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.facts-card-container .card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 5px;
+}
+.sponsors{
+    text-align: center;
+}
+.sponsors-img-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    gap: 20px;
+    align-items: center;
+}
+.sponsors-img-container img{
+    width: 165px;
+}
+footer{
+    background-color: antiquewhite;
+    text-align: center;
+    margin: 100px;
+    padding: 40px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsives styles  */
+@media screen and (max-width: 576px) {
+   header{
+    padding: 20px;
+   }
+   nav, .Teams-container, .facts-card-container, .sponsors-img-container, .feature{
+    flex-direction: column;
+    }
+    nav li {
+        margin-right: 20px;
+       padding-right: 8px;
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+    .teams-contain , .facts-card-container{
+        padding-right:20px ;
+        padding-left: 20px;
+    }
+    .facts-card-container{
+        gap: 20px;
+    }
+    .feature-img img{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .ten-years-badge{
+        max-width: 250px;
+        padding: 40px;
+    }
+    footer{margin: 10px;}
+}
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header{
+     padding: 20px;
+    }
+    nav, .Teams-container, .facts-card-container, .sponsors-img-container, .feature{
+     flex-direction: column;
+     }
+     .facts-card-container{
+        gap: 20px;
+        padding-right:20px ;
+        padding-left: 20px;
+    }
+ }
+ 
